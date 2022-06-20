@@ -29,25 +29,25 @@
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="nomUsuarioString" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="0" min="-2" pref="78" max="-2" attributes="0"/>
+                          <Component id="Correo" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="Contraseña" alignment="0" min="-2" pref="78" max="-2" attributes="0"/>
                           <Component id="nomUsuario" max="32767" attributes="0"/>
                           <Component id="correo" alignment="0" pref="139" max="32767" attributes="0"/>
                           <Component id="password" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel2" min="-2" pref="110" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
-                          <Component id="jTextField1" pref="142" max="32767" attributes="0"/>
+                          <Component id="NombreCompleto" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ContraseñaConfirmacion" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Component id="Contacto" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                          <Component id="fullName" pref="142" max="32767" attributes="0"/>
                           <Component id="passworeConfirm" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextField2" max="32767" attributes="0"/>
+                          <Component id="contacto" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="accionRegistro" min="-2" pref="103" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="34" max="32767" attributes="0"/>
@@ -60,27 +60,27 @@
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="nomUsuarioString" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NombreCompleto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="nomUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fullName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Correo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Contacto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="correo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="contacto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Contraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ContraseñaConfirmacion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -88,7 +88,7 @@
                   <Component id="passworeConfirm" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="accionRegistro" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="32" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -108,29 +108,16 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomUsuarioActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="NombreCompleto">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre Completo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JTextField" name="fullName">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Correo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Correo"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Contacto"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Confirmar Contrase&#xf1;a"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="correo">
@@ -138,21 +125,34 @@
         <Property name="text" type="java.lang.String" value="@gmail.com"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="Contacto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contacto"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="contacto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+569"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Contrase&#xf1;a">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JTextField" name="password">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Contrase&#xf1;aConfirmacion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Confirmar Contrase&#xf1;a"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="passworeConfirm">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passworeConfirmActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="+569"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="accionRegistro">
       <Properties>
         <Property name="text" type="java.lang.String" value="Registrarce"/>
       </Properties>
