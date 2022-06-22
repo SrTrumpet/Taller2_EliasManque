@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interfaz;
+package Dialog;
 
 /**
  *
  * @author Elias M. Olivares
  */
-public class FrameRegistro extends javax.swing.JFrame {
+public class DialogRegistro extends javax.swing.JDialog {
 
     /**
-     * Creates new form FrameRegistro
+     * Creates new form DialogRegistro
      */
-    public FrameRegistro() {
+    public DialogRegistro(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
     }
 
@@ -27,43 +28,23 @@ public class FrameRegistro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nomUsuarioString = new javax.swing.JLabel();
-        nomUsuario = new javax.swing.JTextField();
-        NombreCompleto = new javax.swing.JLabel();
-        fullName = new javax.swing.JTextField();
-        Correo = new javax.swing.JLabel();
-        correo = new javax.swing.JTextField();
-        Contacto = new javax.swing.JLabel();
-        contacto = new javax.swing.JTextField();
-        Contrasena = new javax.swing.JLabel();
-        password = new javax.swing.JTextField();
-        ContrasenaConfirmacion = new javax.swing.JLabel();
-        passworeConfirm = new javax.swing.JTextField();
         accionRegistro = new javax.swing.JButton();
+        passworeConfirm = new javax.swing.JTextField();
+        password = new javax.swing.JTextField();
+        correo = new javax.swing.JTextField();
+        contacto = new javax.swing.JTextField();
+        fullName = new javax.swing.JTextField();
+        nomUsuario = new javax.swing.JTextField();
+        nomUsuarioString = new javax.swing.JLabel();
+        NombreCompleto = new javax.swing.JLabel();
+        Correo = new javax.swing.JLabel();
+        Contacto = new javax.swing.JLabel();
+        Contraseña = new javax.swing.JLabel();
+        ContraseñaConfirmacion = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        nomUsuarioString.setText("Nombre de Usuario");
-
-        nomUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomUsuarioActionPerformed(evt);
-            }
-        });
-
-        NombreCompleto.setText("Nombre Completo");
-
-        Correo.setText("Correo");
-
-        correo.setText("@gmail.com");
-
-        Contacto.setText("Contacto");
-
-        contacto.setText("+569");
-
-        Contrasena.setText("Contraseña");
-
-        ContrasenaConfirmacion.setText("Confirmar Contraseña");
+        accionRegistro.setText("Registrarce");
 
         passworeConfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,47 +52,69 @@ public class FrameRegistro extends javax.swing.JFrame {
             }
         });
 
-        accionRegistro.setText("Registrarce");
+        correo.setText("@gmail.com");
+
+        contacto.setText("+569");
+
+        nomUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomUsuarioActionPerformed(evt);
+            }
+        });
+
+        nomUsuarioString.setText("Nombre de Usuario");
+
+        NombreCompleto.setText("Nombre Completo");
+
+        Correo.setText("Correo");
+
+        Contacto.setText("Contacto");
+
+        Contraseña.setText("Contraseña");
+
+        ContraseñaConfirmacion.setText("Confirmar Contraseña");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(52, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(113, 113, 113)
+                        .addComponent(accionRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(correo)
+                                .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nomUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(nomUsuarioString, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Correo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Contrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nomUsuario)
-                            .addComponent(correo, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
-                            .addComponent(password))
+                            .addComponent(Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(56, 56, 56)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(NombreCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ContrasenaConfirmacion, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ContraseñaConfirmacion, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Contacto, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fullName, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                            .addComponent(passworeConfirm)
-                            .addComponent(contacto)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(142, 142, 142)
-                        .addComponent(accionRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(34, Short.MAX_VALUE))
+                            .addComponent(NombreCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(fullName)
+                                .addComponent(passworeConfirm)
+                                .addComponent(contacto, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(40, 40, 40))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nomUsuarioString)
                     .addComponent(NombreCompleto))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nomUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fullName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fullName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nomUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Correo)
@@ -122,29 +125,27 @@ public class FrameRegistro extends javax.swing.JFrame {
                     .addComponent(contacto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Contrasena)
-                    .addComponent(ContrasenaConfirmacion))
+                    .addComponent(Contraseña)
+                    .addComponent(ContraseñaConfirmacion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(passworeConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(accionRegistro)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGap(36, 36, 36))
         );
-
-        nomUsuarioString.getAccessibleContext().setAccessibleName("nomUsuario");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nomUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomUsuarioActionPerformed
-        
-    }//GEN-LAST:event_nomUsuarioActionPerformed
-
     private void passworeConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passworeConfirmActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passworeConfirmActionPerformed
+
+    private void nomUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomUsuarioActionPerformed
+
+    }//GEN-LAST:event_nomUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,28 +164,35 @@ public class FrameRegistro extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrameRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrameRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrameRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrameRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DialogRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameRegistro().setVisible(true);
+                DialogRegistro dialog = new DialogRegistro(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Contacto;
-    private javax.swing.JLabel Contrasena;
-    private javax.swing.JLabel ContrasenaConfirmacion;
+    private javax.swing.JLabel Contraseña;
+    private javax.swing.JLabel ContraseñaConfirmacion;
     private javax.swing.JLabel Correo;
     private javax.swing.JLabel NombreCompleto;
     private javax.swing.JButton accionRegistro;

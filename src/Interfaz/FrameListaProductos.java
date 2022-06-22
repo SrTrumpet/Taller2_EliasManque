@@ -42,10 +42,20 @@ public class FrameListaProductos extends javax.swing.JFrame {
         jLabel1.setText("Bienvenido");
 
         venderProducto.setText("Vender Producto");
+        venderProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                venderProductoActionPerformed(evt);
+            }
+        });
 
         misProductos.setText("Mis Productos");
 
         infoProductos.setText("Inf. Producto");
+        infoProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infoProductosActionPerformed(evt);
+            }
+        });
 
         misCompras.setText("Mis Compras");
 
@@ -130,6 +140,16 @@ public class FrameListaProductos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void venderProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_venderProductoActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_venderProductoActionPerformed
+
+    private void infoProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoProductosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_infoProductosActionPerformed
 
     /**
      * @param args the command line arguments
